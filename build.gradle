@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation 'org.seleniumhq.selenium:selenium-java:4.16.1'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation 'io.cucumber:cucumber-java:7.14.0'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-testng
+    implementation 'io.cucumber:cucumber-testng:7.14.0'
+
+    // https://mvnrepository.com/artifact/io.cucumber/gherkin
+    implementation 'io.cucumber:gherkin:27.0.0'
+
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation 'commons-io:commons-io:2.15.1'
+
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+
+}
+
+test{
+    String environment = System.getProperty("env").toString().toLowerCase();
+    Properties props = new Properties();
+    File propsFile = file("src/test/resources/%s.properties".formatted(environment))
+    if (propsFile.isFile()) {
+        propsFile.withInputStream { props.load(it) }
+    }
+    for(prop in props){
+        System.setProperty(prop.getKey().toString(), prop.getValue().toString())
+    }
+
+    ignoreFailures = true
+    include '**/CucumberTestNGRunner.class'
+    useTestNG(){
+        scanForTestClasses = false
+        useDefaultListeners = true
+
+        systemProperties System.getProperties()
+    }
+}
+
+tasks.withType(Test).configureEach {
+    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+}
