@@ -26,7 +26,7 @@ Feature: Scenarios for GetWords API
   Scenario: GetWords API invoked with valid characters
     When getWords API is invoked with scrambled characters 'e**t'
     Then response Status Code should be 200
-    And response body should contain jsonPath 'fourLetterWords' with value 'Test'
+    And response body should have jsonPath array 'fourLetterWords' containing value 'Test'
     And all words at jsonPath 'oneLetterWords' should contain 1 characters
     And all words at jsonPath 'twoLetterWords' should contain 2 characters
     And all words at jsonPath 'threeLetterWords' should contain 3 characters

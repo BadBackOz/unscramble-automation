@@ -41,7 +41,7 @@ public class Steps {
         apiUtil.assertResponseBodyContainsString(scenario, expectedString);
     }
 
-    @Then("response body should contain jsonPath {string} with value {string}")
+    @Then("response body should have jsonPath array {string} containing value {string}")
     public void jsonPathShouldContainValue(String jsonPath, String expectedValue){
         apiUtil.assertJsonPathListContainsValue(scenario, jsonPath, expectedValue);
     }

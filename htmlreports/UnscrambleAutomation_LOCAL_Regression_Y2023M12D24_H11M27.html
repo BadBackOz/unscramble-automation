@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1   {color: #452226;}
+h2 {color: #4b615f;}
+table, tr, td, th {border: 1px solid; text-align: left; table-layout:fixed;width:100%;}
+th {background-color: #BBB4B2;}
+td {word-wrap:break-word;}
+</style>
+</head>
+<table>
+<tr>
+<th><strong>Environment</strong></th>
+<th><strong>Total Scenarios</strong></th>
+<th><strong>Passed</strong></th>
+<th><strong>Failed</strong></th>
+<th><strong>Cucumber Tags Executed</strong></th>
+</tr>
+<tr>
+<td>LOCAL</td>
+<td>28</td>
+<td>28</td>
+<td>0</td>
+<td>Regression</td>
+</tr>
+ </table><h1>Scenarios for GetWords API</h1><h2>GetWords API invoked with invalid character '1'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '1'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/1</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '!'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '!'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/!</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '@'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '@'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/@</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '$'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '$'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/$</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '%'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '%'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/%</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '^'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '^'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/^</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '&'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '&'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/&</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '('</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '('</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/(</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character ')'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters ')'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/)</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '_'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '_'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/_</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '+'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '+'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/+</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '='</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '='</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/=</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character ';'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters ';'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/;</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with valid characters</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters 'e**t'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/e**t</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Total words unscrambled from 'e**t': 1599","oneLetterWords":["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"],"twoLetterWords":["Aa","Ab","Ac","Ad","Ae","Af","Ag","Ah","Ai","Ak","Al","Am","An","Ao","Ap","Aq","Ar","As","At","Av","Aw","Ax","Ay","Az","Ba","Bb","Bd","Be","Bf","Bg","Bi","Bk","Bl","Bm","Bn","Bo","Bp","Br","Bs","Bt","Bu","Bv","Bx","By","Bz","Ca","Cb","Cc","Cd","Ce","Cf","Cg","Ch","Ck","Cl","Cm","Co","Cp","Cq","Cr","Cs","Ct","Cu","Cv","Cy","Da","Db","Dc","Dd","De","Dg","Di","Dj","Dk","Dl","Dm","Dn","Do","Dp","Dr","Ds","Dt","Du","Dx","Dy","Dz","Ea","Ec","Ed","Ee","Ef","Eg","Eh","El","Em","En","Eo","Ep","Eq","Er","Es","Et","Eu","Ew","Ex","Ey","Fa","Fb","Fc","Fe","Ff","Fg","Fi","Fl","Fm","Fn","Fo","Fp","Fr","Fs","Ft","Fu","Fv","Fw","Fy","Fz","Ga","Gd","Ge","Gi","Gl","Gm","Gn","Go","Gp","Gr","Gs","Gt","Gu","Gv","Ha","Hb","Hd","He","Hf","Hg","Hi","Hl","Hm","Ho","Hp","Hq","Hr","Hs","Ht","Hu","Hv","Hw","Hy","Ia","Ib","Ic","Id","Ie","If","Ii","Ik","Il","Im","In","Io","Iq","Ir","Is","It","Iv","Iw","Ix","Ja","Jg","Ji","Jo","Jr","Js","Jt","Ju","Ka","Kb","Kc","Kg","Ki","Kl","Km","Kn","Ko","Kr","Kt","Kv","Kw","Ky","La","Lb","Lc","Ld","Le","Lf","Lg","Lh","Li","Ll","Lm","Ln","Lo","Lp","Lr","Ls","Lt","Lu","Lv","Lx","Ly","Ma","Mb","Mc","Md","Me","Mf","Mg","Mh","Mi","Mk","Ml","Mm","Mn","Mo","Mp","Mr","Ms","Mt","Mu","Mv","Mw","My","Na","Nb","Nd","Ne","Ng","Ni","Nj","Nl","Nm","No","Np","Nr","Ns","Nt","Nu","Nv","Ny","Ob","Oc","Od","Oe","Of","Og","Oh","Ok","Ol","Om","On","Op","Or","Os","Ot","Ow","Ox","Oy","Oz","Pa","Pc","Pd","Pe","Pf","Pg","Ph","Pi","Pk","Pl","Pm","Po","Pp","Pq","Pr","Ps","Pt","Pu","Qe","Qh","Ql","Qm","Qn","Qp","Qr","Qs","Qt","Qu","Qv","Qy","Ra","Rc","Rd","Re","Rf","Rg","Rh","Rm","Rn","Ro","Rs","Rt","Sa","Sb","Sc","Sd","Se","Sf","Sg","Sh","Si","Sk","Sl","Sm","Sn","So","Sp","Sq","Sr","Ss","St","Su","Sv","Sw","Ta","Tb","Tc","Td","Te","Tg","Th","Ti","Tk","Tm","Tn","To","Tp","Tr","Ts","Tu","Tv","Tx","Uc","Ud","Ug","Uh","Ui","Um","Un","Up","Ur","Us","Ut","Ux","Va","Vb","Vc","Vd","Vg","Vi","Vl","Vo","Vp","Vr","Vs","Vt","Vu","Vv","Wa","Wb","Wc","Wd","We","Wf","Wg","Wh","Wi","Wk","Wl","Wm","Wo","Wr","Ws","Wt","Wu","Wy","Xc","Xd","Xi","Xr","Xs","Xu","Xw","Xx","Ya","Yd","Ye","Yi","Ym","Yn","Yo","Yr","Ys","Yt","Za","Zn","Zo","Zs"],"threeLetterWords":["Abe","Abt","Ace","Act","Ade","Aeq","Aes","Aer","Aet","Aft","Age","Agt","Aht","Ait","Ake","Ale","Alt","Ame","Amt","Ane","Ant","Ape","Apt","Are","Art","Ase","Ast","Ata","Ate","Ati","Atm","Att","Ave","Awe","Axe","Aye","Bae","Bat","Bde","Bea","Bed","Bec","Bef","Bee","Beg","Bel","Ben","Ber","Bet","Bes","Bey","Bit","Bkt","Boe","Bot","Bpt","Btl","Btu","But","Bvt","Bye","Cat","Cee","Cen","Cep","Che","Cie","Cit","Coe","Cot","Cpt","Cre","Cst","Ctf","Cte","Ctg","Ctn","Cto","Ctr","Cts","Cue","Cut","Cwt","Dae","Dat","Ddt","Deb","Dea","Dec","Def","Dee","Deg","Dei","Del","Den","Dem","Dep","Der","Det","Des","Dev","Dex","Dew","Dey","Dft","Die","Dit","Doe","Dot","Dpt","Dtd","Due","Dwt","Dye","Ead","Eam","Ean","Ear","Eau","Eat","Ebb","Ecb","Eco","Ecu","Edh","Edp","Edo","Eds","Eel","Een","Eer","Eff","Efl","Eft","Efs","Egg","Ego","Eir","Eke","Elb","Ela","Eld","Elf","Eli","Ell","Elk","Elm","Elt","Els","Eme","Emf","Emm","Emp","Ems","Emu","End","Enc","Eng","Enl","Ens","Env","Eof","Eom","Eon","Eos","Epa","Epi","Era","Erd","Erf","Ere","Erg","Erk","Ern","Err","Ers","Esc","Ese","Esd","Esq","Esp","Ess","Esu","Est","Eta","Etc","Eth","Ety","Eva","Eve","Evg","Ewe","Exp","Exr","Ext","Eye","Eyl","Eyn","Eyr","Fae","Fat","Fed","Fec","Fee","Feh","Fei","Fen","Fem","Fer","Fet","Feu","Few","Fez","Fey","Fie","Fit","Fmt","Foe","Fot","Frt","Fth","Fut","Gae","Gat","Geb","Gee","Ged","Gem","Gel","Geo","Gen","Ges","Ger","Get","Gey","Gez","Gie","Git","Glt","Got","Gre","Gtd","Gtc","Gte","Gtt","Gue","Gut","Gye","Hae","Hat","Hed","Hee","Heh","Hei","Hel","Hen","Hem","Hep","Heo","Her","Het","Hes","Hex","Hew","Hey","Hgt","Hie","Hit","Hoe","Hot","Hts","Hue","Hut","Hwt","Hye","Ice","Ide","Ife","Ike","Ile","Int","Ire","Ise","Ist","Ita","Itd","Ito","Its","Ive","Jat","Jct","Jed","Jef","Jee","Jeg","Jen","Jem","Jer","Jet","Jeu","Jew","Jnt","Joe","Jot","Jut","Kae","Kat","Kea","Keb","Kee","Ked","Keg","Kef","Ken","Kep","Ker","Ket","Key","Kex","Kie","Kit","Kue","Kye","Lat","Lea","Led","Lee","Leg","Lei","Lek","Len","Lep","Leo","Ler","Let","Les","Lev","Leu","Lex","Lew","Ley","Lie","Lit","Loe","Lot","Lst","Ltr","Lue","Lut","Lye","Mae","Mat","Mea","Mee","Med","Meg","Mem","Mel","Meo","Men","Meq","Mes","Mer","Meu","Met","Mew","Mev","Mgt","Mit","Mkt","Moe","Mot","Mtd","Mtg","Mtn","Mts","Mtx","Mut","Nae","Nat","Neb","Nea","Ned","Nef","Nee","Neg","Nei","Nek","Nep","Neo","Net","New","Nit","Not","Nth","Nut","Nye","Oat","Obe","Oct","Ode","Oes","Oer","Oft","Oie","Oke","Ole","One","Ont","Oot","Ope","Opt","Ore","Ort","Ose","Otc","Oto","Out","Owe","Owt","Pat","Pct","Pea","Ped","Pee","Peh","Peg","Pen","Pep","Per","Pet","Pes","Pew","Pht","Pie","Pit","Pkt","Pmt","Poe","Pot","Ppt","Pre","Pst","Pta","Pte","Ptg","Ptp","Pts","Ptt","Pty","Put","Pvt","Pwt","Pye","Qat","Qed","Qtd","Qto","Qtr","Qts","Qty","Que","Rat","Rct","Reb","Rea","Red","Rec","Ref","Ree","Reh","Reg","Rei","Rel","Ren","Rem","Rep","Req","Ret","Res","Rev","Rex","Rew","Rhe","Rie","Rit","Rle","Roe","Rot","Rpt","Rte","Rti","Rtw","Rue","Rut","Rye","Sae","Sat","Sct","Sea","Sec","See","Sed","Seg","Sei","Sem","Sel","Sen","Seq","Sep","Ser","Set","Sew","Sey","Sex","She","Sht","Sie","Sit","Slt","Soe","Sot","Spt","Sta","Std","Stg","Stk","Stm","Str","Stu","Sty","Sue","Sye","Tab","Taa","Tad","Tae","Tag","Taj","Tai","Tal","Tan","Tam","Tap","Tao","Tar","Tat","Tas","Tav","Tau","Tax","Taw","Tay","Tbs","Tch","Tck","Tdr","Tea","Ted","Tec","Tef","Tee","Teg","Tel","Ten","Tem","Ter","Tex","Tew","Tez","Tfr","Tgn","Tgt","Tha","The","Tho","Thy","Tib","Tid","Tic","Tie","Tig","Til","Tin","Tim","Tip","Tit","Tis","Tiu","Tji","Tkt","Tlo","Tln","Tlr","Tmh","Tng","Tnt","Tob","Toa","Tod","Toe","Tog","Toi","Tol","Ton","Tom","Top","Too","Tor","Tot","Tos","Tov","Tou","Tox","Tow","Toy","Tpd","Tpi","Tph","Tpk","Tpm","Tps","Tra","Trf","Tri","Trp","Trs","Trt","Try","Tsi","Tsk","Tsp","Tst","Tss","Tty","Tub","Tua","Tue","Tug","Tui","Tun","Tum","Tup","Tur","Tut","Tux","Tuy","Twa","Twi","Twp","Two","Txt","Tye","Tyg","Typ","Tyr","Tyt","Ugt","Uit","Uke","Ule","Ult","Ume","Ure","Use","Ust","Uta","Ute","Uti","Uts","Utu","Vat","Vee","Veg","Vei","Vel","Ver","Vet","Vex","Vie","Voe","Wae","Wat","Wea","Web","Wee","Wed","Wef","Wei","Wem","Wen","Wes","Wer","Wet","Wey","Wit","Woe","Wot","Wut","Wye","Xat","Xed","Yat","Yea","Yee","Yed","Yeh","Yeo","Yen","Yep","Yes","Yer","Yet","Yew","Yex","Yez","Yoe","Yot","Zat","Zea","Zed","Zee","Zel","Zek","Zen","Zep","Zer","Zit"],"fourLetterWords":["Fret","Fute","Gaet","Gate","Geat","Geet","Gelt","Gent","Gest","Gets","Geta","Gite","Yate","Gote","Yeat","Yelt","Yeta","Yest","Yett","Yeth","Yeti","Gret","Yite","Gyte","Yote","Haet","Hate","Heat","Heft","Hent","Hert","Heth","Hete","Hest","Hewt","Hote","Zeta","Zest","Htel","Hyte","Item","Itel","Iten","Iter","Itea","Jert","Jets","Jete","Jest","Jute","Kate","Keat","Keet","Kelt","Kent","Kept","Keto","Ketu","Keta","Khet","Kite","Kmet","Knet","Kyte","Laet","Late","Leat","Lect","Leet","Left","Lent","Leto","Lets","Lett","Lete","Lest","Lite","Lote","Lute","Mate","Meat","Meet","Melt","Ment","Mest","Mets","Meta","Mete","Meth","Mite","Moet","Mote","Mtge","Mute","Nate","Neat","Neet","Nett","Nets","Neth","Nete","Neti","Nest","Neut","Next","Newt","Note","Nyet","Oket","Pate","Peat","Pelt","Pent","Pert","Pets","Peto","Petr","Pete","Pest","Piet","Poet","Pote","Pret","Quet","Rate","Rect","Reet","Regt","Reft","Reit","Rent","Rept","Rets","Rete","Retd","Rest","Rhet","Rite","Rote","Abet","Adet","Aget","Ahet","Sate","Anet","Ante","Seat","Sect","Seit","Selt","Sent","Sept","Seta","Sert","Sets","Sett","Seth","Aret","Sext","Arte","Ates","Aten","Atef","Ated","Atle","Atte","Aute","Site","Sket","Spet","Stge","Bate","Stey","Stew","Stet","Steg","Ster","Step","Sten","Stem","Stre","Stue","Stye","Suet","Beat","Beet","Belt","Bent","Best","Beth","Bete","Beta","Bert","Bets","Bite","Blet","Tade","Tace","Taen","Tael","Tale","Take","Tane","Tame","Tape","Tare","Tate","Tave","Bote","Tche","Teat","Tear","Teas","Teap","Tead","Tean","Teal","Team","Teak","Teda","Tech","Teco","Teck","Tebu","Teca","Teff","Teet","Teed","Teer","Tees","Teen","Teel","Teem","Teds","Tegg","Tegs","Tega","Teju","Teil","Tell","Telt","Tela","Teli","Tele","Tens","Tent","Tend","Teng","Temp","Tema","Tepe","Tepa","Terr","Tera","Terp","Term","Tern","Teri","Teth","Tete","Test","Tess","Tewa","Bret","Teuk","Text","Tews","Thae","Thew","They","Thee","Thed","Thea","Theb","Theo","Them","Then","Tide","Tice","Tier","Ties","Tied","Tien","Tige","Bute","Tile","Tike","Tine","Time","Tipe","Tire","Tite","Byte","Tobe","Tode","Toey","Toes","Toea","Toed","Tole","Toke","Tone","Tome","Tope","Tore","Tote","Toze","Tpke","Trey","Trek","Tres","Tret","Tree","Tref","True","Cate","Tube","Tule","Tuke","Tune","Tume","Tute","Twae","Twee","Twie","Celt","Cent","Cert","Cest","Ceti","Cete","Tyes","Tyee","Tyke","Tyne","Type","Tyre","Chet","Cite","Cote","Ctge","Cute","Date","Debt","Deft","Dent","Dept","Detn","Deti","Detd","Diet","Dite","Dote","Vent","Vert","Vets","Veto","Vest","Veta","Vext","Duet","Vite","Voet","Vote","East","Eats","Eath","Echt","Edit","Efts","Emit","Empt","Entr","Epit","Eqpt","Weet","Weft","Welt","Went","Wept","Weta","Erat","West","Wert","Wets","Erth","Erst","Esth","Etas","Etch","Eten","Eths","Etna","Eton","Etua","Etta","Whet","Etui","Etym","Wite","Ewte","Exit","Expt","Extg","Exta","Eyot","Wote","Fate","Feat","Feet","Felt","Fent","Feta","Fest","Fets","Fete","Wyte","Flet"]}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 200</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 200</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain jsonPath 'fourLetterWords' with value 'Test'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>JSON Object List Values: [Fret, Fute, Gaet, Gate, Geat, Geet, Gelt, Gent, Gest, Gets, Geta, Gite, Yate, Gote, Yeat, Yelt, Yeta, Yest, Yett, Yeth, Yeti, Gret, Yite, Gyte, Yote, Haet, Hate, Heat, Heft, Hent, Hert, Heth, Hete, Hest, Hewt, Hote, Zeta, Zest, Htel, Hyte, Item, Itel, Iten, Iter, Itea, Jert, Jets, Jete, Jest, Jute, Kate, Keat, Keet, Kelt, Kent, Kept, Keto, Ketu, Keta, Khet, Kite, Kmet, Knet, Kyte, Laet, Late, Leat, Lect, Leet, Left, Lent, Leto, Lets, Lett, Lete, Lest, Lite, Lote, Lute, Mate, Meat, Meet, Melt, Ment, Mest, Mets, Meta, Mete, Meth, Mite, Moet, Mote, Mtge, Mute, Nate, Neat, Neet, Nett, Nets, Neth, Nete, Neti, Nest, Neut, Next, Newt, Note, Nyet, Oket, Pate, Peat, Pelt, Pent, Pert, Pets, Peto, Petr, Pete, Pest, Piet, Poet, Pote, Pret, Quet, Rate, Rect, Reet, Regt, Reft, Reit, Rent, Rept, Rets, Rete, Retd, Rest, Rhet, Rite, Rote, Abet, Adet, Aget, Ahet, Sate, Anet, Ante, Seat, Sect, Seit, Selt, Sent, Sept, Seta, Sert, Sets, Sett, Seth, Aret, Sext, Arte, Ates, Aten, Atef, Ated, Atle, Atte, Aute, Site, Sket, Spet, Stge, Bate, Stey, Stew, Stet, Steg, Ster, Step, Sten, Stem, Stre, Stue, Stye, Suet, Beat, Beet, Belt, Bent, Best, Beth, Bete, Beta, Bert, Bets, Bite, Blet, Tade, Tace, Taen, Tael, Tale, Take, Tane, Tame, Tape, Tare, Tate, Tave, Bote, Tche, Teat, Tear, Teas, Teap, Tead, Tean, Teal, Team, Teak, Teda, Tech, Teco, Teck, Tebu, Teca, Teff, Teet, Teed, Teer, Tees, Teen, Teel, Teem, Teds, Tegg, Tegs, Tega, Teju, Teil, Tell, Telt, Tela, Teli, Tele, Tens, Tent, Tend, Teng, Temp, Tema, Tepe, Tepa, Terr, Tera, Terp, Term, Tern, Teri, Teth, Tete, Test, Tess, Tewa, Bret, Teuk, Text, Tews, Thae, Thew, They, Thee, Thed, Thea, Theb, Theo, Them, Then, Tide, Tice, Tier, Ties, Tied, Tien, Tige, Bute, Tile, Tike, Tine, Time, Tipe, Tire, Tite, Byte, Tobe, Tode, Toey, Toes, Toea, Toed, Tole, Toke, Tone, Tome, Tope, Tore, Tote, Toze, Tpke, Trey, Trek, Tres, Tret, Tree, Tref, True, Cate, Tube, Tule, Tuke, Tune, Tume, Tute, Twae, Twee, Twie, Celt, Cent, Cert, Cest, Ceti, Cete, Tyes, Tyee, Tyke, Tyne, Type, Tyre, Chet, Cite, Cote, Ctge, Cute, Date, Debt, Deft, Dent, Dept, Detn, Deti, Detd, Diet, Dite, Dote, Vent, Vert, Vets, Veto, Vest, Veta, Vext, Duet, Vite, Voet, Vote, East, Eats, Eath, Echt, Edit, Efts, Emit, Empt, Entr, Epit, Eqpt, Weet, Weft, Welt, Went, Wept, Weta, Erat, West, Wert, Wets, Erth, Erst, Esth, Etas, Etch, Eten, Eths, Etna, Eton, Etua, Etta, Whet, Etui, Etym, Wite, Ewte, Exit, Expt, Extg, Exta, Eyot, Wote, Fate, Feat, Feet, Felt, Fent, Feta, Fest, Fets, Fete, Wyte, Flet]</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'oneLetterWords' should contain 1 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'twoLetterWords' should contain 2 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'threeLetterWords' should contain 3 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'fourLetterWords' should contain 4 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should not contain jsonPath 'fiveLetterWords'</td>
+    <td>PASSED</td>
+  </tr></table><h1>Scenarios for GetWords API Feature 2</h1><h2>GetWords API invoked with invalid character '1'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '1'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/1</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '!'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '!'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/!</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '@'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '@'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/@</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '$'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '$'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/$</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '%'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '%'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/%</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '^'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '^'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/^</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '&'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '&'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/&</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '('</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '('</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/(</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character ')'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters ')'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/)</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '_'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '_'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/_</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '+'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '+'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/+</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character '='</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters '='</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/=</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with invalid character ';'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters ';'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/;</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 400</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 400</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain '{"message":"Invalid Request: Only Alphabetic characters and \'*\' allowed."}'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Response Body to contain: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}
+Actual Response Body: {"message":"Invalid Request: Only Alphabetic characters and '*' allowed."}</td>
+    <td></td>
+  </tr></table><h2>GetWords API invoked with valid characters</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>When </td>
+    <td>getWords API is invoked with scrambled characters 'e**t'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>API Invoked: http://localhost:8080/getWords/e**t</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Response: {"message":"Total words unscrambled from 'e**t': 1599","oneLetterWords":["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"],"twoLetterWords":["Aa","Ab","Ac","Ad","Ae","Af","Ag","Ah","Ai","Ak","Al","Am","An","Ao","Ap","Aq","Ar","As","At","Av","Aw","Ax","Ay","Az","Ba","Bb","Bd","Be","Bf","Bg","Bi","Bk","Bl","Bm","Bn","Bo","Bp","Br","Bs","Bt","Bu","Bv","Bx","By","Bz","Ca","Cb","Cc","Cd","Ce","Cf","Cg","Ch","Ck","Cl","Cm","Co","Cp","Cq","Cr","Cs","Ct","Cu","Cv","Cy","Da","Db","Dc","Dd","De","Dg","Di","Dj","Dk","Dl","Dm","Dn","Do","Dp","Dr","Ds","Dt","Du","Dx","Dy","Dz","Ea","Ec","Ed","Ee","Ef","Eg","Eh","El","Em","En","Eo","Ep","Eq","Er","Es","Et","Eu","Ew","Ex","Ey","Fa","Fb","Fc","Fe","Ff","Fg","Fi","Fl","Fm","Fn","Fo","Fp","Fr","Fs","Ft","Fu","Fv","Fw","Fy","Fz","Ga","Gd","Ge","Gi","Gl","Gm","Gn","Go","Gp","Gr","Gs","Gt","Gu","Gv","Ha","Hb","Hd","He","Hf","Hg","Hi","Hl","Hm","Ho","Hp","Hq","Hr","Hs","Ht","Hu","Hv","Hw","Hy","Ia","Ib","Ic","Id","Ie","If","Ii","Ik","Il","Im","In","Io","Iq","Ir","Is","It","Iv","Iw","Ix","Ja","Jg","Ji","Jo","Jr","Js","Jt","Ju","Ka","Kb","Kc","Kg","Ki","Kl","Km","Kn","Ko","Kr","Kt","Kv","Kw","Ky","La","Lb","Lc","Ld","Le","Lf","Lg","Lh","Li","Ll","Lm","Ln","Lo","Lp","Lr","Ls","Lt","Lu","Lv","Lx","Ly","Ma","Mb","Mc","Md","Me","Mf","Mg","Mh","Mi","Mk","Ml","Mm","Mn","Mo","Mp","Mr","Ms","Mt","Mu","Mv","Mw","My","Na","Nb","Nd","Ne","Ng","Ni","Nj","Nl","Nm","No","Np","Nr","Ns","Nt","Nu","Nv","Ny","Ob","Oc","Od","Oe","Of","Og","Oh","Ok","Ol","Om","On","Op","Or","Os","Ot","Ow","Ox","Oy","Oz","Pa","Pc","Pd","Pe","Pf","Pg","Ph","Pi","Pk","Pl","Pm","Po","Pp","Pq","Pr","Ps","Pt","Pu","Qe","Qh","Ql","Qm","Qn","Qp","Qr","Qs","Qt","Qu","Qv","Qy","Ra","Rc","Rd","Re","Rf","Rg","Rh","Rm","Rn","Ro","Rs","Rt","Sa","Sb","Sc","Sd","Se","Sf","Sg","Sh","Si","Sk","Sl","Sm","Sn","So","Sp","Sq","Sr","Ss","St","Su","Sv","Sw","Ta","Tb","Tc","Td","Te","Tg","Th","Ti","Tk","Tm","Tn","To","Tp","Tr","Ts","Tu","Tv","Tx","Uc","Ud","Ug","Uh","Ui","Um","Un","Up","Ur","Us","Ut","Ux","Va","Vb","Vc","Vd","Vg","Vi","Vl","Vo","Vp","Vr","Vs","Vt","Vu","Vv","Wa","Wb","Wc","Wd","We","Wf","Wg","Wh","Wi","Wk","Wl","Wm","Wo","Wr","Ws","Wt","Wu","Wy","Xc","Xd","Xi","Xr","Xs","Xu","Xw","Xx","Ya","Yd","Ye","Yi","Ym","Yn","Yo","Yr","Ys","Yt","Za","Zn","Zo","Zs"],"threeLetterWords":["Abe","Abt","Ace","Act","Ade","Aeq","Aes","Aer","Aet","Aft","Age","Agt","Aht","Ait","Ake","Ale","Alt","Ame","Amt","Ane","Ant","Ape","Apt","Are","Art","Ase","Ast","Ata","Ate","Ati","Atm","Att","Ave","Awe","Axe","Aye","Bae","Bat","Bde","Bea","Bed","Bec","Bef","Bee","Beg","Bel","Ben","Ber","Bet","Bes","Bey","Bit","Bkt","Boe","Bot","Bpt","Btl","Btu","But","Bvt","Bye","Cat","Cee","Cen","Cep","Che","Cie","Cit","Coe","Cot","Cpt","Cre","Cst","Ctf","Cte","Ctg","Ctn","Cto","Ctr","Cts","Cue","Cut","Cwt","Dae","Dat","Ddt","Deb","Dea","Dec","Def","Dee","Deg","Dei","Del","Den","Dem","Dep","Der","Det","Des","Dev","Dex","Dew","Dey","Dft","Die","Dit","Doe","Dot","Dpt","Dtd","Due","Dwt","Dye","Ead","Eam","Ean","Ear","Eau","Eat","Ebb","Ecb","Eco","Ecu","Edh","Edp","Edo","Eds","Eel","Een","Eer","Eff","Efl","Eft","Efs","Egg","Ego","Eir","Eke","Elb","Ela","Eld","Elf","Eli","Ell","Elk","Elm","Elt","Els","Eme","Emf","Emm","Emp","Ems","Emu","End","Enc","Eng","Enl","Ens","Env","Eof","Eom","Eon","Eos","Epa","Epi","Era","Erd","Erf","Ere","Erg","Erk","Ern","Err","Ers","Esc","Ese","Esd","Esq","Esp","Ess","Esu","Est","Eta","Etc","Eth","Ety","Eva","Eve","Evg","Ewe","Exp","Exr","Ext","Eye","Eyl","Eyn","Eyr","Fae","Fat","Fed","Fec","Fee","Feh","Fei","Fen","Fem","Fer","Fet","Feu","Few","Fez","Fey","Fie","Fit","Fmt","Foe","Fot","Frt","Fth","Fut","Gae","Gat","Geb","Gee","Ged","Gem","Gel","Geo","Gen","Ges","Ger","Get","Gey","Gez","Gie","Git","Glt","Got","Gre","Gtd","Gtc","Gte","Gtt","Gue","Gut","Gye","Hae","Hat","Hed","Hee","Heh","Hei","Hel","Hen","Hem","Hep","Heo","Her","Het","Hes","Hex","Hew","Hey","Hgt","Hie","Hit","Hoe","Hot","Hts","Hue","Hut","Hwt","Hye","Ice","Ide","Ife","Ike","Ile","Int","Ire","Ise","Ist","Ita","Itd","Ito","Its","Ive","Jat","Jct","Jed","Jef","Jee","Jeg","Jen","Jem","Jer","Jet","Jeu","Jew","Jnt","Joe","Jot","Jut","Kae","Kat","Kea","Keb","Kee","Ked","Keg","Kef","Ken","Kep","Ker","Ket","Key","Kex","Kie","Kit","Kue","Kye","Lat","Lea","Led","Lee","Leg","Lei","Lek","Len","Lep","Leo","Ler","Let","Les","Lev","Leu","Lex","Lew","Ley","Lie","Lit","Loe","Lot","Lst","Ltr","Lue","Lut","Lye","Mae","Mat","Mea","Mee","Med","Meg","Mem","Mel","Meo","Men","Meq","Mes","Mer","Meu","Met","Mew","Mev","Mgt","Mit","Mkt","Moe","Mot","Mtd","Mtg","Mtn","Mts","Mtx","Mut","Nae","Nat","Neb","Nea","Ned","Nef","Nee","Neg","Nei","Nek","Nep","Neo","Net","New","Nit","Not","Nth","Nut","Nye","Oat","Obe","Oct","Ode","Oes","Oer","Oft","Oie","Oke","Ole","One","Ont","Oot","Ope","Opt","Ore","Ort","Ose","Otc","Oto","Out","Owe","Owt","Pat","Pct","Pea","Ped","Pee","Peh","Peg","Pen","Pep","Per","Pet","Pes","Pew","Pht","Pie","Pit","Pkt","Pmt","Poe","Pot","Ppt","Pre","Pst","Pta","Pte","Ptg","Ptp","Pts","Ptt","Pty","Put","Pvt","Pwt","Pye","Qat","Qed","Qtd","Qto","Qtr","Qts","Qty","Que","Rat","Rct","Reb","Rea","Red","Rec","Ref","Ree","Reh","Reg","Rei","Rel","Ren","Rem","Rep","Req","Ret","Res","Rev","Rex","Rew","Rhe","Rie","Rit","Rle","Roe","Rot","Rpt","Rte","Rti","Rtw","Rue","Rut","Rye","Sae","Sat","Sct","Sea","Sec","See","Sed","Seg","Sei","Sem","Sel","Sen","Seq","Sep","Ser","Set","Sew","Sey","Sex","She","Sht","Sie","Sit","Slt","Soe","Sot","Spt","Sta","Std","Stg","Stk","Stm","Str","Stu","Sty","Sue","Sye","Tab","Taa","Tad","Tae","Tag","Taj","Tai","Tal","Tan","Tam","Tap","Tao","Tar","Tat","Tas","Tav","Tau","Tax","Taw","Tay","Tbs","Tch","Tck","Tdr","Tea","Ted","Tec","Tef","Tee","Teg","Tel","Ten","Tem","Ter","Tex","Tew","Tez","Tfr","Tgn","Tgt","Tha","The","Tho","Thy","Tib","Tid","Tic","Tie","Tig","Til","Tin","Tim","Tip","Tit","Tis","Tiu","Tji","Tkt","Tlo","Tln","Tlr","Tmh","Tng","Tnt","Tob","Toa","Tod","Toe","Tog","Toi","Tol","Ton","Tom","Top","Too","Tor","Tot","Tos","Tov","Tou","Tox","Tow","Toy","Tpd","Tpi","Tph","Tpk","Tpm","Tps","Tra","Trf","Tri","Trp","Trs","Trt","Try","Tsi","Tsk","Tsp","Tst","Tss","Tty","Tub","Tua","Tue","Tug","Tui","Tun","Tum","Tup","Tur","Tut","Tux","Tuy","Twa","Twi","Twp","Two","Txt","Tye","Tyg","Typ","Tyr","Tyt","Ugt","Uit","Uke","Ule","Ult","Ume","Ure","Use","Ust","Uta","Ute","Uti","Uts","Utu","Vat","Vee","Veg","Vei","Vel","Ver","Vet","Vex","Vie","Voe","Wae","Wat","Wea","Web","Wee","Wed","Wef","Wei","Wem","Wen","Wes","Wer","Wet","Wey","Wit","Woe","Wot","Wut","Wye","Xat","Xed","Yat","Yea","Yee","Yed","Yeh","Yeo","Yen","Yep","Yes","Yer","Yet","Yew","Yex","Yez","Yoe","Yot","Zat","Zea","Zed","Zee","Zel","Zek","Zen","Zep","Zer","Zit"],"fourLetterWords":["Fret","Fute","Gaet","Gate","Geat","Geet","Gelt","Gent","Gest","Gets","Geta","Gite","Yate","Gote","Yeat","Yelt","Yeta","Yest","Yett","Yeth","Yeti","Gret","Yite","Gyte","Yote","Haet","Hate","Heat","Heft","Hent","Hert","Heth","Hete","Hest","Hewt","Hote","Zeta","Zest","Htel","Hyte","Item","Itel","Iten","Iter","Itea","Jert","Jets","Jete","Jest","Jute","Kate","Keat","Keet","Kelt","Kent","Kept","Keto","Ketu","Keta","Khet","Kite","Kmet","Knet","Kyte","Laet","Late","Leat","Lect","Leet","Left","Lent","Leto","Lets","Lett","Lete","Lest","Lite","Lote","Lute","Mate","Meat","Meet","Melt","Ment","Mest","Mets","Meta","Mete","Meth","Mite","Moet","Mote","Mtge","Mute","Nate","Neat","Neet","Nett","Nets","Neth","Nete","Neti","Nest","Neut","Next","Newt","Note","Nyet","Oket","Pate","Peat","Pelt","Pent","Pert","Pets","Peto","Petr","Pete","Pest","Piet","Poet","Pote","Pret","Quet","Rate","Rect","Reet","Regt","Reft","Reit","Rent","Rept","Rets","Rete","Retd","Rest","Rhet","Rite","Rote","Abet","Adet","Aget","Ahet","Sate","Anet","Ante","Seat","Sect","Seit","Selt","Sent","Sept","Seta","Sert","Sets","Sett","Seth","Aret","Sext","Arte","Ates","Aten","Atef","Ated","Atle","Atte","Aute","Site","Sket","Spet","Stge","Bate","Stey","Stew","Stet","Steg","Ster","Step","Sten","Stem","Stre","Stue","Stye","Suet","Beat","Beet","Belt","Bent","Best","Beth","Bete","Beta","Bert","Bets","Bite","Blet","Tade","Tace","Taen","Tael","Tale","Take","Tane","Tame","Tape","Tare","Tate","Tave","Bote","Tche","Teat","Tear","Teas","Teap","Tead","Tean","Teal","Team","Teak","Teda","Tech","Teco","Teck","Tebu","Teca","Teff","Teet","Teed","Teer","Tees","Teen","Teel","Teem","Teds","Tegg","Tegs","Tega","Teju","Teil","Tell","Telt","Tela","Teli","Tele","Tens","Tent","Tend","Teng","Temp","Tema","Tepe","Tepa","Terr","Tera","Terp","Term","Tern","Teri","Teth","Tete","Test","Tess","Tewa","Bret","Teuk","Text","Tews","Thae","Thew","They","Thee","Thed","Thea","Theb","Theo","Them","Then","Tide","Tice","Tier","Ties","Tied","Tien","Tige","Bute","Tile","Tike","Tine","Time","Tipe","Tire","Tite","Byte","Tobe","Tode","Toey","Toes","Toea","Toed","Tole","Toke","Tone","Tome","Tope","Tore","Tote","Toze","Tpke","Trey","Trek","Tres","Tret","Tree","Tref","True","Cate","Tube","Tule","Tuke","Tune","Tume","Tute","Twae","Twee","Twie","Celt","Cent","Cert","Cest","Ceti","Cete","Tyes","Tyee","Tyke","Tyne","Type","Tyre","Chet","Cite","Cote","Ctge","Cute","Date","Debt","Deft","Dent","Dept","Detn","Deti","Detd","Diet","Dite","Dote","Vent","Vert","Vets","Veto","Vest","Veta","Vext","Duet","Vite","Voet","Vote","East","Eats","Eath","Echt","Edit","Efts","Emit","Empt","Entr","Epit","Eqpt","Weet","Weft","Welt","Went","Wept","Weta","Erat","West","Wert","Wets","Erth","Erst","Esth","Etas","Etch","Eten","Eths","Etna","Eton","Etua","Etta","Whet","Etui","Etym","Wite","Ewte","Exit","Expt","Extg","Exta","Eyot","Wote","Fate","Feat","Feet","Felt","Fent","Feta","Fest","Fets","Fete","Wyte","Flet"]}</td>
+    <td></td>
+  </tr><tr>
+    <td>Then </td>
+    <td>response Status Code should be 200</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Actual Status Code: 200</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should contain jsonPath 'fourLetterWords' with value 'Test'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>JSON Object List Values: [Fret, Fute, Gaet, Gate, Geat, Geet, Gelt, Gent, Gest, Gets, Geta, Gite, Yate, Gote, Yeat, Yelt, Yeta, Yest, Yett, Yeth, Yeti, Gret, Yite, Gyte, Yote, Haet, Hate, Heat, Heft, Hent, Hert, Heth, Hete, Hest, Hewt, Hote, Zeta, Zest, Htel, Hyte, Item, Itel, Iten, Iter, Itea, Jert, Jets, Jete, Jest, Jute, Kate, Keat, Keet, Kelt, Kent, Kept, Keto, Ketu, Keta, Khet, Kite, Kmet, Knet, Kyte, Laet, Late, Leat, Lect, Leet, Left, Lent, Leto, Lets, Lett, Lete, Lest, Lite, Lote, Lute, Mate, Meat, Meet, Melt, Ment, Mest, Mets, Meta, Mete, Meth, Mite, Moet, Mote, Mtge, Mute, Nate, Neat, Neet, Nett, Nets, Neth, Nete, Neti, Nest, Neut, Next, Newt, Note, Nyet, Oket, Pate, Peat, Pelt, Pent, Pert, Pets, Peto, Petr, Pete, Pest, Piet, Poet, Pote, Pret, Quet, Rate, Rect, Reet, Regt, Reft, Reit, Rent, Rept, Rets, Rete, Retd, Rest, Rhet, Rite, Rote, Abet, Adet, Aget, Ahet, Sate, Anet, Ante, Seat, Sect, Seit, Selt, Sent, Sept, Seta, Sert, Sets, Sett, Seth, Aret, Sext, Arte, Ates, Aten, Atef, Ated, Atle, Atte, Aute, Site, Sket, Spet, Stge, Bate, Stey, Stew, Stet, Steg, Ster, Step, Sten, Stem, Stre, Stue, Stye, Suet, Beat, Beet, Belt, Bent, Best, Beth, Bete, Beta, Bert, Bets, Bite, Blet, Tade, Tace, Taen, Tael, Tale, Take, Tane, Tame, Tape, Tare, Tate, Tave, Bote, Tche, Teat, Tear, Teas, Teap, Tead, Tean, Teal, Team, Teak, Teda, Tech, Teco, Teck, Tebu, Teca, Teff, Teet, Teed, Teer, Tees, Teen, Teel, Teem, Teds, Tegg, Tegs, Tega, Teju, Teil, Tell, Telt, Tela, Teli, Tele, Tens, Tent, Tend, Teng, Temp, Tema, Tepe, Tepa, Terr, Tera, Terp, Term, Tern, Teri, Teth, Tete, Test, Tess, Tewa, Bret, Teuk, Text, Tews, Thae, Thew, They, Thee, Thed, Thea, Theb, Theo, Them, Then, Tide, Tice, Tier, Ties, Tied, Tien, Tige, Bute, Tile, Tike, Tine, Time, Tipe, Tire, Tite, Byte, Tobe, Tode, Toey, Toes, Toea, Toed, Tole, Toke, Tone, Tome, Tope, Tore, Tote, Toze, Tpke, Trey, Trek, Tres, Tret, Tree, Tref, True, Cate, Tube, Tule, Tuke, Tune, Tume, Tute, Twae, Twee, Twie, Celt, Cent, Cert, Cest, Ceti, Cete, Tyes, Tyee, Tyke, Tyne, Type, Tyre, Chet, Cite, Cote, Ctge, Cute, Date, Debt, Deft, Dent, Dept, Detn, Deti, Detd, Diet, Dite, Dote, Vent, Vert, Vets, Veto, Vest, Veta, Vext, Duet, Vite, Voet, Vote, East, Eats, Eath, Echt, Edit, Efts, Emit, Empt, Entr, Epit, Eqpt, Weet, Weft, Welt, Went, Wept, Weta, Erat, West, Wert, Wets, Erth, Erst, Esth, Etas, Etch, Eten, Eths, Etna, Eton, Etua, Etta, Whet, Etui, Etym, Wite, Ewte, Exit, Expt, Extg, Exta, Eyot, Wote, Fate, Feat, Feet, Felt, Fent, Feta, Fest, Fets, Fete, Wyte, Flet]</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'oneLetterWords' should contain 1 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'twoLetterWords' should contain 2 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'threeLetterWords' should contain 3 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>all words at jsonPath 'fourLetterWords' should contain 4 characters</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>response body should not contain jsonPath 'fiveLetterWords'</td>
+    <td>PASSED</td>
+  </tr></table></body>
