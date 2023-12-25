@@ -8,7 +8,7 @@ Tech Stack
 
 Steps to Execute Tests
  1. Create Gradle Configuration.
- 2. Set Run command to 'clean test -Denv="LOCAL" -Dcucumber.filter.tags="@Regression"'. (Scenarios executed can be controlled by updating 'cucumber.filter.tags' property with tag to execute, which are annotated above test scenarios.)
+ 2. Set Run command to 'clean test -Denv="LOCAL" -Dparalleltestcount=4 -Dcucumber.filter.tags="@Regression"'.
  3. Run configuration.
 
 Environment specific properties files

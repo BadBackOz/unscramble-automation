@@ -19,63 +19,70 @@ public class CustomHTMLReport {
 
     private static final String PROJECT = System.getProperty("project");
 
-    private static final String BODY_START = "<!DOCTYPE html>\n" +
-            "<html>\n" +
-            "<head>\n" +
-            "<style>\n" +
-            "h1   {color: #452226;}\n" +
-            "h2 {color: #4b615f;}\n" +
-            "table, tr, td, th {border: 1px solid; text-align: left; table-layout:fixed;width:100%;}\n" +
-            "th {background-color: #BBB4B2;}\n" +
-            "td {word-wrap:break-word;}\n" +
-            "</style>\n" +
-            "</head>\n";
+    private static final String BODY_START = """
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <style>
+            h1   {color: #452226;}
+            h2 {color: #4b615f;}
+            table, tr, td, th {border: 1px solid; text-align: left; table-layout:fixed;width:100%;}
+            th {background-color: #BBB4B2;}
+            td {word-wrap:break-word;}
+            </style>
+            </head>
+            """;
 
-    private static final String OVERVIEW_TABLE = "<table>\n" +
-            "<tr>\n" +
-            "<th><strong>Environment</strong></th>\n" +
-            "<th><strong>Total Scenarios</strong></th>\n" +
-            "<th><strong>Passed</strong></th>\n" +
-            "<th><strong>Failed</strong></th>\n" +
-            "<th><strong>Cucumber Tags Executed</strong></th>\n" +
-            "</tr>\n" +
-            "<tr>\n" +
-            "<td>environmentPlaceholder</td>\n" +
-            "<td>totalScenariosPlaceholder</td>\n" +
-            "<td>passedPlaceholder</td>\n" +
-            "<td>failedPlaceholder</td>\n" +
-            "<td>cucumberTagsPlaceholder</td>\n" +
-            "</tr>\n" +
-            " </table>";
+    private static final String OVERVIEW_TABLE = """
+            <table>
+            <tr>
+            <th><strong>Environment</strong></th>
+            <th><strong>Total Scenarios</strong></th>
+            <th><strong>Passed</strong></th>
+            <th><strong>Failed</strong></th>
+            <th><strong>Cucumber Tags Executed</strong></th>
+            </tr>
+            <tr>
+            <td>environmentPlaceholder</td>
+            <td>totalScenariosPlaceholder</td>
+            <td>passedPlaceholder</td>
+            <td>failedPlaceholder</td>
+            <td>cucumberTagsPlaceholder</td>
+            </tr>
+             </table>""";
 
     private static final String FEATURE_SECTION = "<h1>featurePlaceholder</h1>";
 
     private static final String SCENARIO_NAME_SECTION = "<h2>scenarioNamePlaceholder</h2>";
 
-    private static final String SCENARIO_TABLE_HEADERS = "<table>\n" +
-            "  <tr>\n" +
-            "    <th>StepType</th>\n" +
-            "    <th>Step Description</th>\n" +
-            "    <th>Step Result</th>\n" +
-            "  </tr>";
+    private static final String SCENARIO_TABLE_HEADERS = """
+            <table>
+              <tr>
+                <th>StepType</th>
+                <th>Step Description</th>
+                <th>Step Result</th>
+              </tr>""";
 
-    private static final String SCENARIO_TABLE_STEP_PASSED = "<tr>\n" +
-            "    <td>stepTypePlaceholder</td>\n" +
-            "    <td>stepDescriptionPlaceholder</td>\n" +
-            "    <td>PASSED</td>\n" +
-            "  </tr>";
+    private static final String SCENARIO_TABLE_STEP_PASSED = """
+            <tr>
+                <td>stepTypePlaceholder</td>
+                <td>stepDescriptionPlaceholder</td>
+                <td>PASSED</td>
+              </tr>""";
 
-    private static final String SCENARIO_TABLE_STEP_FAILED = "<tr bgcolor=\"red\">\n" +
-            "    <td>stepTypePlaceholder</td>\n" +
-            "    <td>stepDescriptionPlaceholder</td>\n" +
-            "    <td>FAILED</td>\n" +
-            "  </tr>";
+    private static final String SCENARIO_TABLE_STEP_FAILED = """
+            <tr bgcolor="red">
+                <td>stepTypePlaceholder</td>
+                <td>stepDescriptionPlaceholder</td>
+                <td>FAILED</td>
+              </tr>""";
 
-    private static final String SCENARIO_TABLE_SUB_STEP_INFO= "<tr>\n" +
-            "    <td>Info</td>\n" +
-            "    <td>stepDescriptionPlaceholder</td>\n" +
-            "    <td></td>\n" +
-            "  </tr>";
+    private static final String SCENARIO_TABLE_SUB_STEP_INFO= """
+            <tr>
+                <td>Info</td>
+                <td>stepDescriptionPlaceholder</td>
+                <td></td>
+              </tr>""";
 
     private static final String SCENARIO_TABLE_END = "</table>";
 

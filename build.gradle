@@ -2,6 +2,10 @@ plugins {
     id 'java'
 }
 
+if(JavaVersion.current() < JavaVersion.VERSION_17){
+    throw new GradleException("This build must be run with Java version 17 or greater")
+}
+
 repositories {
     mavenCentral()
 }
@@ -25,12 +29,12 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation 'com.google.code.gson:gson:2.10.1'
 
-
 }
 
 test{
-    String environment = System.getProperty("env").toString().toLowerCase();
-    Properties props = new Properties();
+    String environment = System.getProperty("env").toString().toLowerCase()
+    String parallelTestCount = System.getProperty("paralleltestcount")
+    Properties props = new Properties()
     File propsFile = file("src/test/resources/%s.properties".formatted(environment))
     if (propsFile.isFile()) {
         propsFile.withInputStream { props.load(it) }
@@ -38,6 +42,11 @@ test{
     for(prop in props){
         System.setProperty(prop.getKey().toString(), prop.getValue().toString())
     }
+
+    if(parallelTestCount == null){
+        parallelTestCount = "1"
+    }
+    System.setProperty("dataproviderthreadcount", parallelTestCount)
 
     ignoreFailures = true
     include '**/CucumberTestNGRunner.class'
@@ -47,8 +56,4 @@ test{
 
         systemProperties System.getProperties()
     }
-}
-
-tasks.withType(Test).configureEach {
-    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
 }
