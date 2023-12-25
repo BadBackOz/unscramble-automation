@@ -13,8 +13,6 @@ import java.util.List;
 
 public class Steps {
 
-    private final static String GET_WORDS_ENDPOINT = "/getWords";
-
     ApiUtil apiUtil;
 
     public Steps(){
