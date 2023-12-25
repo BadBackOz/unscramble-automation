@@ -1,14 +1,12 @@
 package com.ohz.runner;
 
+import com.ohz.common.Configuration;
 import com.ohz.util.CustomHTMLReport;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 
@@ -29,7 +27,7 @@ public class CucumberTestNGRunner extends AbstractTestNGCucumberTests {
 
     @AfterMethod
     public void afterMethod(){
-        System.out.println("afterMethod");
+        Configuration.removeScenario();
     }
 
     @AfterSuite
@@ -42,14 +40,14 @@ public class CucumberTestNGRunner extends AbstractTestNGCucumberTests {
         super.runScenario(pickleWrapper, featureWrapper);
     }
 
-    //TODO - Enable running of tests by executing this runner class directly instead of via Gradle command
-    /*@Override
+    @Override
     @DataProvider(name="scenarios", parallel = true)
     public Object[][] scenarios(){
         return super.scenarios();
     }
 
-    private void setProperties() {
+    //TODO - Enable running of tests by executing this runner class directly instead of via Gradle command
+/*    private void setProperties() {
         String environment = System.getProperty("env");
         if(null == environment){
             Properties properties = new Properties();
