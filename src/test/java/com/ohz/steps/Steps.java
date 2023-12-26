@@ -46,17 +46,17 @@ public class Steps {
     @And("all words at jsonPath {string} should contain {int} characters")
     public void allWordsAtJsonPathShouldContainCharacters(String jsonPath, int characterCount) {
         List<String> jsonPathValueList = apiUtil.getResponse().jsonPath().getList(jsonPath);
-        boolean isFourCharacters= false;
+        boolean isExpectedCharacterCount= false;
 
         for(String word : jsonPathValueList){
-            isFourCharacters = word.length() == characterCount;
-            if(!isFourCharacters){
+            isExpectedCharacterCount = word.length() == characterCount;
+            if(!isExpectedCharacterCount){
                 Configuration.getScenario().log("Word with incorrect character count in object: %s".formatted(word));
                 break;
             }
         }
 
-        Assert.assertTrue(isFourCharacters);
+        Assert.assertTrue(isExpectedCharacterCount);
     }
 
     @And("response body should not contain jsonPath {string}")
